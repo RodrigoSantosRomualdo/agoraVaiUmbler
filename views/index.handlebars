@@ -1,0 +1,215 @@
+<br><br>
+
+<div class="row ">  
+  <div class="col-3"></div>  <!-- DIV LATERAL -->
+
+  <div class="col-6 d-flex justify-content-around mybackgroud ">  <!-- DIV COM AS INFOS  -->
+    
+    <div class="row">
+      <div class="col-12">
+
+      <img  src="img/logoProvisoria.jpg" style="width: 150px; height: 150px">
+      <br><br>
+      
+      
+    </div> <!-- class="row" -->
+
+      </div>
+    </div>
+    
+    
+
+    
+
+  </div>
+  
+
+  <div class="col-3"></div> <!-- DIV LATERAL -->
+</div>
+
+ <!-- COMEÇA AGORA OUTRO -->
+
+<div class="row">  
+  <div class="col-3"></div>  <!-- DIV LATERAL -->
+
+  <div class="col-6 d-flex justify-content-around mybackgroud ">  <!-- DIV COM AS INFOS  -->
+    <div class="col-4 ">
+      <p class="text-white border border-dark rounded font-weight-bold">PING: {{ping}}</p>
+      <p class="text-white border border-dark rounded font-weight-bold">UPLOAD: {{upload}}</p>
+      <p class="text-white border border-dark rounded font-weight-bold">IP: {{ip}}</p>
+      <p class="text-white border border-dark rounded font-weight-bold">Provedor: {{operadora}}</p>
+
+    </div>
+
+    <div class="col-6 mybackgroud">
+      <div class="row text-center">
+        <p id="texto01" class="text-white  ">A sua velocidade atual é</p>
+        
+      </div>
+
+      <div id="netMbps" class="row align-items-center">  <!--  -->
+        <p class="text-white fontsizeL font-weight-bold">
+          {{download}} 
+        <!-- {{download}} 13.78 -->
+        </p>
+        <p class="text-white d-flex  fontsizeMbps " > Mbps</p>
+        
+      </div>   <!-- FIM -->
+
+      <div class="row"> 
+    
+        <div class="col-4">
+          <p></p>
+        </div>
+        <div id="vemOculto" class="col-4 c-loader  btn btn-outline-success">
+          <p class="font-weight-bold">Loading</p>
+        </div>
+        <div class="col-4">
+          <p></p>
+        </div>
+
+      </div>
+         
+
+   
+
+    </div>
+  
+
+    <!-- INICIO BOTÂO -->
+    <div id="Play" class="col-2 d-flex align-items-center">
+      <form action="/" method="POST"> 
+      <button type="submit" class="btn btn-success text-white">PLAY</button>
+      
+      </form>
+    </div>
+  </div>
+
+    <!--Quando inicio com API-->
+   
+
+    <!--LOADING-->
+    
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+      
+        
+        document.getElementById("vemOculto").style.display = "none";
+        
+
+        $(document).ready(function () {
+            $("#Play").click(function () {
+              document.getElementById("netMbps").style.display = "none";
+              $(".c-loader").show();
+                //$(".Play").hide();
+               // $("#vemOculto").show();
+                //$(".c-loader").show();
+                //$(".netMbps").hide();
+               
+            }) 
+
+
+
+          /*
+            $("#Play").click(function () {
+                $("#Play").hide();
+               // $("#vemOculto").show();
+                $(".c-loader").show();
+            })
+
+            $(".c-loader").click(function () {
+                $(".c-loader").hide();
+                $("#Play").show();
+            })  */
+        })
+    </script>
+
+
+
+    <!--
+    <p class="text-white">PING: {{ping}}</p>
+    <p class="text-white">UPLOAD: {{upload}}</p>
+
+    <div class="row">
+      <div class="col-12">
+
+
+      <div class="row  col-12"> 
+        
+
+      </div>
+      
+      <div class="row bg-warning">
+      <div class="col-12 bg-warning">
+      <img  src="img/logoProvisoria.jpg" style="width: 150px; height: 150px">
+
+      <form action="/" method="POST"> 
+      <button type="submit"> Cadastrar </button>
+    </form> -
+      </div>
+    </div> class="row" 
+
+      </div>
+    </div>
+    
+    
+
+    
+
+  </div>
+  
+
+  <div class="col-3"></div>  DIV LATERAL 
+</div>
+
+
+
+
+
+
+<br><br><br><br>
+
+<div class="row">  
+  <div class="col-3"></div>   DIV LATERAL 
+
+  <div class="col-6 d-flex justify-content-around mybackgroud"> 
+    
+    <img  src="img/logoProvisoria.jpg" style="width: 150px; height: 150px">
+
+  </div>
+
+  <div class="col-3"></div>  DIV LATERAL
+</div>
+
+
+
+ OUTRA LINHA LOADING 
+<br><br><br><br>
+<div class="row">
+  <div class="col-3"></div>
+
+  <div class="col-6 d-flex justify-content-around mybackgroud"> 
+    
+    <div class="c-loader  btn btn-outline-success">
+      <p>Loading</p>
+    </div>
+
+  </div>
+
+  <div class="col-3"></div>  
+</div>
+
+
+<div class="d-flex justify-content-start">..A.</div>
+<div class="d-flex justify-content-end">..B.</div>
+<div class="d-flex justify-content-center">..C.</div>
+<div class="d-flex justify-content-between">.D..</div>
+<div class="d-flex justify-content-around">..E.</div>
+
+
+<div class="mx-auto mybackgroud" style="width:80% ;">
+  Elemento centralizado
+</div> -->
