@@ -4,9 +4,6 @@ const app = express();
 const speedTest = require('speedtest-net');
 
 const functionSpeed = () => {
-
- 
-  
   return new Promise((resolve, reject) => {
    resolve(speedTest())
     //reject("Rejeitada")
@@ -22,6 +19,7 @@ const express = require("express");
 //const app = express();
 
 //npm install --save speedtest-net
+// speedtest-net --accept-license
 
 const speedTest = require('speedtest-net');
 
